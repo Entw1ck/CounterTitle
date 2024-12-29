@@ -62,7 +62,7 @@ class Cns(commands.Cog):
                 color=self.hexcolor,
                 timestamp=datetime.datetime.now()
                 )
-                servembed.set_image(url="https://i.ibb.co/jJrzsfb/435320e42e3c131e7527924fbd66b68f.gif")
+                servembed.set_image(url="https://ibb.co/album/J3nFLq")
 
                 await ctx.send(embed=servembed)
             

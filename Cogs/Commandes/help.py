@@ -14,7 +14,6 @@ class Help(commands.Cog):
     app_commands.Choice(name="ping", value="ping"),
     app_commands.Choice(name="cns", value="cns"),
     app_commands.Choice(name="mode", value="mode"),
-    app_commands.Choice(name="partner", value="partner"),
     app_commands.Choice(name="help", value="help")
     ])
     async def help(self, ctx, commande='not specified'):
@@ -25,12 +24,11 @@ class Help(commands.Cog):
                 color=self.hexcolor,
                 timestamp=datetime.datetime.now()
             )
-            helpembed.set_image(url="https://i.ibb.co/jJrzsfb/435320e42e3c131e7527924fbd66b68f.gif")
+            helpembed.set_image(url="https://i.ibb.co/0KTmLMs/Banner.jpg")
             helpembed.add_field(name="&ping", value="Le bot répond afin de vérifier sa présence en ligne", inline=False)
             helpembed.add_field(name="&cns [nouveau nom de serveur]", value="Change le nom du serveur", inline=False)
             helpembed.add_field(name="&mode", value="Change le mode du compteur de membre présent dans le titre", inline=False)
             helpembed.add_field(name="&help <commande>", value="Affiche le panneau d'aide", inline=False)
-            helpembed.add_field(name="&partner", value="Affiche les partenaires du bot", inline=False)
             await ctx.send(embed=helpembed)
 
         elif commande.lower() == 'ping' :
@@ -40,7 +38,7 @@ class Help(commands.Cog):
                 color=self.hexcolor,
                 timestamp=datetime.datetime.now()
             )
-            helpembed.set_image(url="https://i.ibb.co/x3PgqTF/Help-alternative-embed.jpg")
+            helpembed.set_image(url="https://i.ibb.co/Lh0sXqh/Help-alternative-embed.jpg")
             await ctx.send(embed=helpembed)
         
         elif commande.lower() == 'cns' :
@@ -50,7 +48,7 @@ class Help(commands.Cog):
                 color=self.hexcolor,
                 timestamp=datetime.datetime.now()
             )
-            helpembed.set_image(url="https://i.ibb.co/x3PgqTF/Help-alternative-embed.jpg")
+            helpembed.set_image(url="https://i.ibb.co/Lh0sXqh/Help-alternative-embed.jpg")
             await ctx.send(embed=helpembed)
 
         elif commande.lower() == 'mode' :
@@ -60,7 +58,7 @@ class Help(commands.Cog):
                 color=self.hexcolor,
                 timestamp=datetime.datetime.now()
             )
-            helpembed.set_image(url="https://i.ibb.co/x3PgqTF/Help-alternative-embed.jpg")
+            helpembed.set_image(url="https://i.ibb.co/Lh0sXqh/Help-alternative-embed.jpg")
             await ctx.send(embed=helpembed)
 
         elif commande.lower() == 'help' :
@@ -70,17 +68,7 @@ class Help(commands.Cog):
                 color=self.hexcolor,
                 timestamp=datetime.datetime.now()
             )
-            helpembed.set_image(url="https://i.ibb.co/x3PgqTF/Help-alternative-embed.jpg")
-            await ctx.send(embed=helpembed)
-
-        elif commande.lower() == 'partner' :
-            helpembed = discord.Embed(
-                title="Panneau d'aide",
-                description="`&partner`\nCette commande permet de vérifier les partenaires officiels du bot\n\nPermission requises : Envoyer des messages",
-                color=self.hexcolor,
-                timestamp=datetime.datetime.now()
-            )
-            helpembed.set_image(url="https://i.ibb.co/x3PgqTF/Help-alternative-embed.jpg")
+            helpembed.set_image(url="https://i.ibb.co/Lh0sXqh/Help-alternative-embed.jpg")
             await ctx.send(embed=helpembed)
 
         else :

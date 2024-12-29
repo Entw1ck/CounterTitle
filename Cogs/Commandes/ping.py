@@ -17,9 +17,9 @@ class Ping(commands.Cog):
         timestamp=datetime.datetime.now()
         )
 
-        ping_embed.set_image(url="https://i.ibb.co/n8gnc7T/Ping-embed-image.jpg")
+        ping_embed.set_image(url="https://i.ibb.co/0KTmLMs/Banner.jpg")
         ping_embed.add_field(name="Version", value=str("1.0.0"), inline=True)
-        ping_embed.add_field(name="Collection image", value=str("https://ibb.co/album/Cs8hnN"), inline=True)
+        ping_embed.add_field(name="Collection image", value=str("https://ibb.co/album/J3nFLq"), inline=True)
 
         await ctx.send(embed=ping_embed)
 
